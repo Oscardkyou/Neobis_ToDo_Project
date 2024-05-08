@@ -65,8 +65,4 @@ python manage.py runserver
 ![Главный экран](img/456.png)
 
 
-![Добавление задачи](img/123.png)
-
-
-
 ![Добавление задачи](img/789.png)
