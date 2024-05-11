@@ -28,3 +28,5 @@ def delete_todo(request, pk):
     todo.delete()
     todos = Todo.objects.all().order_by('-id')
     return render(request, 'todo-list.html', {'todos': todos})
+
+
