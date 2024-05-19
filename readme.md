@@ -22,22 +22,16 @@ Follow these steps to set up the project on your local machine:
 - Django 3.x
 - PostgreSQL
 
-### Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/todo-list.git
-   cd todo-list
+Clone the repository:
+```
+git clone https://github.com/your-username/todo-list.git
+cd todo-list
 Create a virtual environment and activate it:
 
-bash
-Копировать код
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install the required packages:
 
-bash
-Копировать код
 pip install -r requirements.txt
 Set up the PostgreSQL database:
 
@@ -45,19 +39,15 @@ Create a database named todolist.
 Update the DATABASES setting in settings.py with your database credentials.
 Apply migrations:
 
-Копировать код
 python manage.py migrate
 Create a superuser:
 
-Копировать код
 python manage.py createsuperuser
 Run the development server:
 
-Копировать код
 python manage.py runserver
-Usage
-To use the application, follow these steps:
 
+```
 
 Access the application:
 Open your web browser and go to http://127.0.0.1:8000/.
