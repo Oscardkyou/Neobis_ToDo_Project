@@ -1,68 +1,104 @@
-# Простое приложение ToDo List
+# To-Do List Application
 
-Простое приложение ToDo List, разработанное с использованием Django Framework, HTMX и Bootstrap 5, предназначено для управления задачами. Это приложение позволяет пользователям добавлять, удалять и отмечать задачи как выполненные.
+## Project Description
 
-## Функциональность
+This To-Do List application is designed to help users manage their daily tasks efficiently. Users can add, edit, and delete tasks, as well as mark them as completed. The application is built using Django Framework, htmx, Bootstrap 5, and PostgreSQL for the database.
 
-- **Регистрация пользователей**: Пользователи теперь могут регистрироваться в приложении, используя стандартную форму регистрации Django. Это позволяет пользователям создавать собственные учетные записи для управления их задачами персонально.
+## Features
 
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed
+- Responsive design using Bootstrap 5
 
-## Технологии
+## Installation
 
-- **Django Framework**: основа приложения, обеспечивает структуру и поддержку моделей, представлений и шаблонов.
-- **HTMX**: добавляет интерактивность к веб-страницам без использования JavaScript.
-- **Bootstrap 5**: фреймворк для стилизации и создания адаптивного дизайна.
+Follow these steps to set up the project on your local machine:
 
-## Установка
+### Prerequisites
 
-Для запуска проекта необходимо установить Python и Django. Также понадобится PostgreSQL как система управления базами данных.
+- Python 3.x
+- Django 3.x
+- PostgreSQL
 
-## Установка и настройка settings.py
+### Steps
 
-Для корректной работы регистрации необходимо настроить систему аутентификации и подключить базу данных для хранения данных пользователей.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/todo-list.git
+   cd todo-list
+Create a virtual environment and activate it:
 
-- **Настройка базы данных в `settings.py`**:
-  Убедитесь, что настройки базы данных корректно конфигурированы для использования с Django. Это может включать установку и настройку PostgreSQL или другой поддерживаемой базы данных.
+bash
+Копировать код
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+Install the required packages:
 
-- **Применение миграций для аутентификации**:
-  Django использует систему миграций для создания и изменения таблиц базы данных, включая таблицы, необходимые для аутентификации пользователей.
-  ```bash
-  python manage.py migrate
-
-```bash
-# Клонирование репозитория
-git clone <url-репозитория>
-
-# Установка зависимостей
+bash
+Копировать код
 pip install -r requirements.txt
+Set up the PostgreSQL database:
 
-# Настройка базы данных в settings.py
+Create a database named todolist.
+Update the DATABASES setting in settings.py with your database credentials.
+Apply migrations:
 
-# Применение миграций
+Копировать код
 python manage.py migrate
+Create a superuser:
 
-# Запуск сервера
+Копировать код
+python manage.py createsuperuser
+Run the development server:
+
+Копировать код
 python manage.py runserver
-Использование
-После запуска сервера откройте http://localhost:8000 в вашем браузере. Вы увидите интерфейс ToDo List, где можно добавлять, удалять и отмечать задачи.
-
-Вклад
-Любые предложения по улучшению приложения приветствуются. Для внесения изменений:
-
-Форкните репозиторий.
-Создайте ветку для новых функций (git checkout -b feature)
-Сделайте коммиты (git commit -am 'Add some feature')
-Отправьте ветку (git push origin feature)
-Отправьте pull request.
-Автоh Dk
-
-```
+Usage
+To use the application, follow these steps:
 
 
+Access the application:
+Open your web browser and go to http://127.0.0.1:8000/.
 
-## Скриншоты
+Add tasks:
+Click on "Add Task" and fill in the task details.
 
-![Главный экран](img/456.png)
+Edit tasks:
+Click on the "Edit" button next to the task you want to modify.
+
+Delete tasks:
+Click on the "Delete" button next to the task you want to remove.
+
+Mark tasks as completed:
+Click on the checkbox next to the task.
+
+Screenshots
+Here are some screenshots of the application:
 
 
-![Добавление задачи](img/789.png)
+![Home Page](img/123.png)
+![Add Task](img/456.png)
+![Edit Task](img/678.png)
+![Completed Tasks](img/789.png)
+
+
+Contribution
+Contributions are welcome! If you want to contribute to this project, please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -m 'Add some feature').
+Push to the branch (git push origin feature-branch).
+Open a pull request.
+Authors
+Your Name
+GitHub: your-username
+Email: your-email@example.com
+Important Notes
+Avoid using complex terms and jargon that might be difficult for users to understand.
+Include screenshots and code examples to simplify the explanation of how your project works.
+Keep the descriptions of your project's features clear and concise.
+Use formatting (bold, italics, etc.) to highlight important elements.
+Document the project thoroughly, including comments where necessary.
